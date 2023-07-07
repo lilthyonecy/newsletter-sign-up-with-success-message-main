@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <!-- Sign-up form start -->
+    <div id="sign-up" class="sign-up">
+      <img src="assets/images/illustration-sign-up-mobile.svg" class="img mobile" alt="" srcset="">
+      <div class="stay">
+        <h1>
+          Stay updated!
+        </h1>
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="list-items">
+          <li class="list-item">
+            <span>
+              <img src="assets/images/icon-list.svg" alt="" srcset="">
+            </span>
+            Product discovery and building what matters
+          </li>
+          <li class="list-item">
+            <span>
+              <img src="assets/images/icon-list.svg" alt="" srcset="">
+            </span>
+            Measuring to ensure updates are a success
+          </li>
+          <li class="list-item">
+            <span>
+              <img src="assets/images/icon-list.svg" alt="" srcset="">
+            </span>
+            And much more!
+          </li>
+        </ul>
+        <form action="#" id="subscription-form">
+          <label for="emailaddress">
+            Email address
+          </label>
+          <span id="error-text" class="error-text">Valid email required</span>
+          <input type="text" id="emailaddress" class="email-address" name="emailaddress"
+            placeholder="email@company.com">
+          <input type="submit" class="sub-email" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
+      <img src="assets/images/illustration-sign-up-desktop.svg" class="img desktop" alt="" srcset="">
+      <!-- <div class="stay-img">
+    </div> -->
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="success" id="success">
+      <span>
+        <img src="assets/images/icon-list.svg" alt="" srcset="">
+      </span>
+      <h1>
+        Thanks for subscribing!
+      </h1>
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <input type="submit" value="Dismiss message">
+    </div>
+    <!-- Success message end -->
+  </div>
+  <div class="attribution" hidden>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Abdulsalam Ahmed</a>.
+  </div>
+</body>
+<script>
+  const submit = document.getElementById('subscription-form');
+  submit.addEventListener('submit', e => {
+    const emailaddress = document.getElementById('emailaddress');
+    const email = emailaddress.value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      emailaddress.classList.add('error');
+      document.getElementById('error-text').style.display = 'block';
+      e.preventDefault();
+      return
+    }
+    document.getElementById('sign-up').style.display = 'none';
+    document.getElementById('success').style.display = 'block';
+    emailaddress.classList.remove('error');
+    e.preventDefault();
+  })
+</script>
+
+</html>
