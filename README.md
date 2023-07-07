@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://lilthyonecy.github.io/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [Newsletter sign up](https://lilthyonecy.github.io/newsletter-sign-up-with-success-message-main)
 
 
 ## Author
