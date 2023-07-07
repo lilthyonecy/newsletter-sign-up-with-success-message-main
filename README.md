@@ -10,7 +10,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Links](#links)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,8 +26,14 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
+<p align="center">
+  
+  <img alt="Desktop View" src="https://raw.githubusercontent.com/lilthyonecy/newsletter-sign-up-with-success-message-main/main/my%20design/desktop.png" height="160" />
+  <p align="center">
+    <img alt="Desktop success" src="https://raw.githubusercontent.com/lilthyonecy/newsletter-sign-up-with-success-message-main/main/my%20design/desktop-success.png" height="60" />
+  </p>
+</p>
 
-![](./my design/desktop-success.png)
 
 
 ### Links
