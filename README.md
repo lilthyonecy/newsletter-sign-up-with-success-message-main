@@ -27,11 +27,8 @@ Users should be able to:
 
 ### Screenshot
 <p align="center">
-  
   <img alt="Desktop View" src="https://raw.githubusercontent.com/lilthyonecy/newsletter-sign-up-with-success-message-main/main/my%20design/desktop.png" height="160" />
-  <p align="center">
-    <img alt="Desktop success" src="https://raw.githubusercontent.com/lilthyonecy/newsletter-sign-up-with-success-message-main/main/my%20design/desktop-success.png" height="60" />
-  </p>
+  <img alt="Desktop success" src="https://raw.githubusercontent.com/lilthyonecy/newsletter-sign-up-with-success-message-main/main/my%20design/desktop-success.png" height="160" />
 </p>
 
 
